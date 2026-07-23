@@ -14,11 +14,11 @@ rl.question("Ingresa el primer número: ", (input1) => {
 
       // Validacion de numeros
       if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
-        console.log("Por favor ingresa únicamente valores numéricos válidos.");
+        console.log("ingrese solo numeros menso.");
       } else {
         // logica
         if (num1 === num2 && num2 === num3) {
-          console.log(`Los tres números son iguales: ${num1}, ${num2}, ${num3}`);
+          console.log(`pon numeros diferentes menso: ${num1}, ${num2}, ${num3}`);
         } else {
           let numeros = [num1, num2, num3];
 
