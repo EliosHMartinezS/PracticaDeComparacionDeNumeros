@@ -4,7 +4,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
-
+// Ingreso de datos
 rl.question("Ingresa el primer número: ", (input1) => {
   rl.question("Ingresa el segundo número: ", (input2) => {
     rl.question("Ingresa el tercer número: ", (input3) => {
@@ -12,11 +12,11 @@ rl.question("Ingresa el primer número: ", (input1) => {
       let num2 = Number(input2);
       let num3 = Number(input3);
 
-      // Validar que sean números
+      // Validacion de numeros
       if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
         console.log("Por favor ingresa únicamente valores numéricos válidos.");
       } else {
-        // Verificar si todos son iguales
+        // logica
         if (num1 === num2 && num2 === num3) {
           console.log(`Los tres números son iguales: ${num1}, ${num2}, ${num3}`);
         } else {
